@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+* {
+	padding:0;
+	margin:0;
+}
+body{
+	background:#fff;
+}
+ul,li {
+	list-style: none;
+}
+div.right{
+	height:2000px
+}
+.right ul{
+	position: fixed;
+	bottom:30%;
+	right:0;
+}
+.do_top li {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: #312b2b ;
+	border: 1px solid #11dab7;
+	border-bottom:0 none;
+	box-sizing: border-box;
+	font-size: 14px;
+	cursor: pointer;
+}
+.do_top li.tp {
+	background:#312b2b url(image/top.png) no-repeat center center;
+}
+.do_top li.wechet{
+	
+	background:#312b2b url(image/wechat.png) no-repeat center center;
+}
+.do_top li.github {
+	background:#312b2b url(image/github.png) no-repeat center center;
+}
+.do_top li.qqchact {
+	background:#312b2b url(image/qq.png) no-repeat center center;
+}
+
+.do_top li:last-child {
+	border-bottom: 1px solid #11dab7;
+}
+.do_top li .side_bar {
+	display: none;
+	position: absolute;
+	background-color:#312b2b;
+	right:57px;
+	top:-1px;
+	width:180px;
+	border: 1px solid #11dab7;
+	box-sizing:border-box;
+}
+.do_top li:hover .side_bar {
+	display: block;
+	border-right: 1px solid #312b2b;
+}
+
+.do_top li.wx .side_bar {
+	height:180px;
+	padding:15px 10px;
+	text-align:center;
+	color:#fff;
+}
+.do_top li.wx .side_bar img {
+	margin-bottom:10px;
+}
+.do_top li.github .side_bar {
+	height:61px;
+	line-height:60px;
+	padding:0 10px;
+}
+.do_top li.qq .side_bar {
+	height:60px;
+	padding:10px 10px;
+	color:#fff;
+}
+.do_top li .side_bar a {
+	color:#4a90e2;
+	text-decoration:none;
+}
